@@ -7,6 +7,7 @@
 body{
     max-width: 1500px;
     background-color: #080C20;
+    font-family: 'Manrope',sans-serif;
 
 }
 
@@ -27,33 +28,49 @@ header > img{
 }
 
 
-.mid_top{
+.middle{
     display: flex;
-    justify-content: space-between;
-    height: 475px;
+    justify-content: space-evenly;
+    height: 459px;
+    width: 105%;
 }
 
-.mid_top > div{
-    margin: 20px 50px;
-}
 
-.hero_left{
-    background-image: url('assets/illustration-hero-left.svg');
+
+.mid_lines{
+    background-image: url('assets/bg-hero-squiggle.svg');
     background-repeat: no-repeat;
-    width: 33%;
-   
+    background-position: center center;
+    background-size: 544px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.middle_lines{
-    background-image: url('assets/bg-hero-squiggle.svg');
-    background-repeat: no-repeat;
-    width: 40%;
+.mid_lines > p,h1{
+    
+    margin:20px auto;
+    width: 400px;
+    color: #FFFFFF
 }
 
-.hero_right{
-    background-image: url('assets/illustration-hero-right.svg');
-    background-repeat: no-repeat;
-    width: 33%;
-   
+.mid_lines > h1{
+    margin-top: 90px;
+    width: 425px
 }
+
+.prime{
+    color: #3EE9E5
+}
+
+
+.thoughts{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.thoughts > div{
+    margin: 20px 20px;
+}
+
