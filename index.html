@@ -30,23 +30,23 @@
     <div class="thoughts">
       <div class='items item1'>
         <img src="assets/illustration-passions.svg" alt="Passion">
-        <h4>Indulge your passions</h4>
+        <p class='thoughts_title'>Indulge your passions</p>
         <p>Your passions shouldn't be just for the weekend. Earn a living doing what you love.
         </p>
       </div>
       <div class='items item2'>
         <img src="assets/illustration-financial-freedom.svg" alt="Money Jar">
-        <h4>Gain financial freedom</h4>
+        <p class='thoughts_title'>Gain financial freedom</p>
         <p> Start making money work for you. There’s nothing quite like earning while you sleep. </p>
       </div>
       <div class='items item1'>
         <img src="assets/illustration-lifestyle.svg" alt="Lifestyle">
-        <h4>Choose your lifestyle</h4>
+        <p class='thoughts_title'>Choose your lifestyle<p>
         <p>Own your daily schedule. Fancy a lie-in? Go for it! Take charge of your week.</p>
       </div>
       <div class='items item2'>
         <img src="assets/illustration-work-anywhere.svg" alt="Travel">
-        <h4>Work from anywhere</h4>
+        <p class='thoughts_title'>Work from anywhere</p>
         <p>Selling online means not being pinned down. Want to work AND travel? Go for it!</p>
       </div>
     </div>
@@ -84,16 +84,18 @@
     <footer>
       <div class='emailer'>
       <h2>Get notified when we launch</h2>
-      <form>
-        <div>
-           <input type="email" name="email" id="email" placeholder="Email address">
+      <form name='myForm'>
+        <div class='email'>
+           <input type="email" name="email" id="email" placeholder="Email address" class='email_input'>
+           <span class="error">Opps...don't think thats an email</span>
         </div>
         <div>
-           <input type="button" value="Get notified">
+           <input type="button" value="Get notified" class='btn'>
         </div>
       </form>
       </div>
     </footer>
   </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+
 *{
     margin: 0
 }
@@ -14,6 +15,7 @@ body{
 
 p{
     color: #777F98;
+    font-weight: 100;
 }
 
 h2,h4{
@@ -23,6 +25,7 @@ h2,h4{
 .container{
     width: 100%;
     height: 100%;
+    
 }
 
 header{
@@ -127,6 +130,18 @@ header > img{
     
 }
 
+.thoughts_title{
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .item2{
     position: relative;
     top: 65px;
@@ -154,10 +169,11 @@ header > img{
 }
 
 .plans > .plan{
-    margin: 10px;
+    margin: 20px;
     padding: 15px;
     border-radius: 10px;
     width: 400px;
+    position: relative;
 }
 
 .free{
@@ -166,6 +182,7 @@ header > img{
 
 .paid{
     background-color: #3EE9E5;
+    transform: scale(1.05);
 }
 
 .plan_text{
@@ -176,7 +193,7 @@ header > img{
     font-size: 2em;
 }
 
-ul {
+  ul {
     list-style: none;
   }
   
@@ -222,7 +239,7 @@ ul {
     position: absolute;
     z-index: 2;
     left: 790px;
-    top:1585px
+    top:1563px
 
     
  }
@@ -250,7 +267,7 @@ ul {
   form{
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       
   }
 
@@ -260,13 +277,37 @@ ul {
       background-color:#093F68;
       padding: 10px;
       border-radius: 20px;
-      border: none;
+      /* border: hidden; */
       color:#777F98;
   }
 
   input[type=button]{
       border-radius: 20px;
-      border: none;
+      border: hidden;
       padding: 10px;
       background-color: #3EE9E5;
+      position: relative;
+      top: 10px;
+      cursor: pointer;
+  }
+
+  .email{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .email_input{
+      border: 1px solid #FF2965;
+      /* visibility: hidden; */
+    }
+
+   /* .email_input::after{
+        border: 1px solid #FF2965;
+        visibility: hidden;
+      } */
+  
+
+  .error{
+      visibility: hidden;
+      color: #FF2965;
   }
