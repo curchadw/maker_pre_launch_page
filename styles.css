@@ -76,6 +76,12 @@ header > img{
     width: 425px
 }
 
+.scroll{
+    position: absolute;
+    left: 50%;
+    top: 600px;
+}
+
 .prime{
     color: #3EE9E5
 }
@@ -205,6 +211,22 @@ ul {
       color: #FFFFFF;
   }
 
+  .free_icon{
+    position: absolute;
+    z-index: 2;
+    left: 330px;
+    top:1590px
+  }
+
+  .paid_icon{
+    position: absolute;
+    z-index: 2;
+    left: 790px;
+    top:1585px
+
+    
+ }
+
   footer{
       margin-top: 200px;
       background-image: url('assets/bg-footer-squiggle.svg');
@@ -214,8 +236,37 @@ ul {
       text-align: center;
   }
 
+ 
+
+  footer > .emailer > h2{
+      margin-bottom: 40px;
+  }
+
+  .emailer{
+      position: relative;
+      top: 40px;
+  }
+
   form{
       display: flex;
       justify-content: center;
-      align-items: center ;
+      align-items: center;
+      
+  }
+
+  input[type=email]{
+      width: 250px;
+      margin: 10px;
+      background-color:#093F68;
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+      color:#777F98;
+  }
+
+  input[type=button]{
+      border-radius: 20px;
+      border: none;
+      padding: 10px;
+      background-color: #3EE9E5;
   }
